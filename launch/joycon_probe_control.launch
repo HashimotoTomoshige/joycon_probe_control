@@ -1,0 +1,8 @@
+<launch>
+  <group ns="probe_control">
+    <node pkg="joy" name="joy_node" type="joy_node" />
+    <node pkg="joycon_probe_control" name="joycon_probe_control" type="joycon_probe_control" output="screen">
+    <!-- <remap from="/probe_control/joy" to="/joy" /> -->
+    </node>
+  </group>
+</launch>
